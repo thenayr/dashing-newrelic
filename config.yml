@@ -1,0 +1,3 @@
+:newrelic:
+  :api_key: "xxxxxxxxxxxxxxx"
+  :app_name: 'Your App Name'

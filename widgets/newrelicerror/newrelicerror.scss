@@ -1,0 +1,56 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #7F8C8D;
+
+$title-color:       rgba(255, 255, 255, 1.0);
+$moreinfo-color:    rgba(255, 255, 255, 1.0);
+
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+.widget.widget-newrelicerror{
+  vertical-align: bottom;
+}
+.widget-newrelicerror {
+
+  background-color: $background-color;
+  background-position: center center;
+  background-image: url("/assets/nr.png");
+
+  h2 {
+    margin-bottom: -33px;
+    text-transform: none;
+    float: left;
+    position: absolute;
+    top: 30px;
+  }
+
+
+  .error-graph {
+    position: absolute;
+    top: 178px;
+    left: 0;
+  }
+
+  .title {
+    color: $title-color;
+    font-size: 35px;
+    position: absolute;
+    top:0px;
+    left: 5px;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+  .updated-at {
+    color: rgba(255, 255, 255, 1.0);
+  }
+
+
+  &.large h3 {
+    font-size: 65px;
+  }
+}
