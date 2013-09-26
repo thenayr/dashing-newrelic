@@ -50,21 +50,21 @@ These config options get loaded in each of the separate job files.
 
 Now you only need to add the widgets into your dashboard:
 
-* Response time widget
+* **Response time widget**
 ```html
 <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
   <div data-id="newrelic-response" data-view="Newrelicresponse" data-title="Response time" ></div>
 </li>
 ```
 
-* Error rate widget
+* **Error rate widget**
 ```html
 <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
   <div data-id="newrelic-error" data-view="Newrelicerror" data-title="Error rate" ></div>
 </li>
 ```
 
-* RPM (throughput) widget
+* **RPM (throughput) widget**
 ```html
 <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
   <div data-id="newrelic-rpm" data-view="Newrelicrpm" data-title="RPM" ></div>
