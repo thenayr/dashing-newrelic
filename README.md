@@ -67,14 +67,14 @@ The last step would be to set the thresholds for the two responsive widgets (err
 
 * Change error rate threshold `newrelicerror.coffee`, update @errorRateGreen and @errorRateYellow.  Anything above @errorRateYellow will be considered red!
 ```coffeescript
-  ready: ->
-    @errorRateGreen = 1
-    @errorRateYellow = 3.0
+ready: ->
+  @errorRateGreen = 1
+  @errorRateYellow = 3.0
 ```
 
 * Change response time threshold `newrelicresponse.coffee`, update @responseGreen and @responseYellow.  Anything above @responseYellow will be considered red!
 ```coffeescript
-  ready: ->
-    @responseGreen = 200
-    @responseYellow = 500
+ready: ->
+  @responseGreen = 200
+  @responseYellow = 500
 ```
