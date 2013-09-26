@@ -9,6 +9,7 @@ This is a suite of widgets to help monitor your web applications performance usi
 * **Requests per minute (throughput)**
 
 The widgets are all designed for maximum visibility from a distance. All the widgets contain a maximum of 60 points of data at any given time. Because there is no historical data points, it will start on the right of the chart and fill over time to be the full width of the chart.  
+
 Neutral colors for behaving values, and high contrast yellow and red for warning and errors respectively. Two of the widgets are responsive and react to changes in the values returned.  There are three possible colors, neutral (green), yellow and red.  This h
 
 ## Dependencies
