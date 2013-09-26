@@ -1,5 +1,7 @@
 # New Relic widget trio for Dashing
 
+![](http://i.imgur.com/zVRlm77.gif?1)
+
 ## Description
 
 This is a suite of widgets to help monitor your web applications performance using New Relic.  There are a total of 3 widgets:
