@@ -2,6 +2,10 @@
 
 ![](http://i.imgur.com/zVRlm77.gif?1)
 
+## Live Demo
+
+There is a live demo available here - [live demo link](http://widget.iamnayr.com:3000/sample)
+
 ## Description
 
 This is a suite of widgets to help monitor your web applications performance using New Relic.  There are a total of 3 widgets:
