@@ -44,7 +44,7 @@ Now copy over the `config.yml` into the root directory of your Dashing applicati
   :app_name: 'Your App Name'
 ```
 
-**IMPORTANT** If your app name has any special characters in it, you will need to escape them in the name.  For example: 'My app \(production\)'
+**IMPORTANT** If your app name has any special characters in it, you will need to escape them in the name.  For example: `'My app \(production\)'`
 
 These config options get loaded in each of the separate job files.
 
