@@ -75,14 +75,14 @@ Now you only need to add the widgets into your dashboard:
 
 The last step would be to set the thresholds for the two responsive widgets (error rate and response time).  This is done inside the files `newrelicerror.coffee` and `newrelicresponse.coffee` inside the widgets directory.
 
-* Change error rate threshold `newrelicerror.coffee`, update `@errorRateGreen` and `@errorRateYellow`.  Anything above @errorRateYellow will be considered red!
+* Change error rate threshold in `newrelicerror.coffee`. Update `@errorRateGreen` and `@errorRateYellow`.  Anything above @errorRateYellow will be considered red!
 ```coffeescript
 ready: ->
   @errorRateGreen = 1
   @errorRateYellow = 3.0
 ```
 
-* Change response time threshold `newrelicresponse.coffee`, update `@responseGreen` and `@responseYellow`.  Anything above @responseYellow will be considered red!
+* Change response time threshold in `newrelicresponse.coffee`. Update `@responseGreen` and `@responseYellow`.  Anything above @responseYellow will be considered red!
 ```coffeescript
 ready: ->
   @responseGreen = 200
