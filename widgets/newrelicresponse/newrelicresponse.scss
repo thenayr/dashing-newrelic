@@ -29,8 +29,9 @@ $moreinfo-color:    rgba(255, 255, 255, 1.0);
 
   .response-graph {
     position: absolute;
-    top: 178px;
+    bottom: 0;
     left: 0;
+    font-size: 0;
   }
 
   .title {
