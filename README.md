@@ -20,10 +20,10 @@ I used neutral colors for behaving values, and high contrast yellow and red for 
 
 ## Dependencies
 
-The following gem is required:
+The following gems are required: activeresource, 
 [newrelic_api](https://github.com/newrelic/newrelic_api)
 
-Place it inside of the Dashing `Gemfile`:
+Place them inside of the Dashing `Gemfile`:
 
 ```
 ## Gemfile
