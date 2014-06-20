@@ -27,6 +27,7 @@ Place it inside of the Dashing `Gemfile`:
 
 ```
 ## Gemfile
+gem 'activeresource'
 gem 'newrelic_api'
 ```
 
