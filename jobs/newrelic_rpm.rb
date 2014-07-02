@@ -27,8 +27,7 @@ last_x = points.last[:x]
 ## Every 1m for this
 SCHEDULER.every '1m', :first_in => 0 do |job|
 
-  ## RPM is the fourth value returned by new relic
-  current_rpm = app_select[0].threshold_values[3].metric_value
+  current_rpm = app_select[0].threshold_values.select{|v| v.name.eql? 'Throughput'}[0].metric_value
 
   ## Drop the first point value and increment x by 1
   points.shift
