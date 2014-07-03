@@ -18,7 +18,7 @@ points = []
 
 ## One hours worth of data for, seed 60 empty points (rickshaw acts funny if you don't).
 (0..60).each do |a|
-  points << { x: a, y: 0.01 }
+  points << { x: a, y: 0.00 }
 end
 
 ## Grab the last x value
