@@ -28,8 +28,7 @@ last_x = points.last[:x]
 ## Just under a minute works great for New Relic data
 SCHEDULER.every '0.9m', :first_in => 0 do |job|
 
-  ## Error rate is the third value returned by new relic
-  current_error = app_select[0].threshold_values[2].metric_value
+  current_error = app_select[0].threshold_values.select{|v| v.name.eql? 'Error Rate'}[0].metric_value
 
   ## Drop the first point value and increment x by 1
   points.shift
