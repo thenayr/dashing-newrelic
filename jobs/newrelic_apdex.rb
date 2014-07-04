@@ -1,4 +1,4 @@
-metric = 'Throughput'
+metric = 'Apdex'
 
 newrelic = Newrelic.new({metric: metric})
 points = newrelic.points
