@@ -94,3 +94,16 @@ You can easily add new widgets using any value returned by the New Relic API. Fo
 </li>
 ```
  * You now have a CPU widget which will be green below 70%, yellow up to 90% and red above.
+
+### Metrics available from API
+
+As of 5 July 2014, the following metrics are available from the API on the free usage tier (take care to maintain spaces/capitalisation/etc):
+
+ * `Apdex` (index)
+ * `Error Rate` (percent)
+ * `Throughput` (rpm)
+ * `Errors` (epm)
+ * `Response Time` (ms)
+ * `DB` (percent)
+ * `CPU` (percent)
+ * `Memory` (MB)
