@@ -87,7 +87,7 @@ You can easily add new widgets using any value returned by the New Relic API. Fo
 
  * Copy one of the files in the `jobs` directory to a new filename, e.g. `cp newrelic_apdex.rb newrelic_cpu.rb`
  * Edit the first line of the newly created `newrelic_cpu.rb` to say `metric = 'CPU'`
- * Copy the dashboard widget HTML, replacing 'Apdex' with 'CPU' and customising the `data-green` and `data-yellow` limits:
+ * Copy the dashboard widget HTML, replacing 'Apdex' with 'CPU' (if there are any spaces in the name of the new metric, replace them with underscores here) and customising the `data-green` and `data-yellow` limits:
 ```
 <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
   <div id="newrelic_CPU" data-id="newrelic_CPU" data-view="Newrelic" data-title="CPU" data-green="70" data-yellow="90" ></div>
