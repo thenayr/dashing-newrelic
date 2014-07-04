@@ -13,16 +13,21 @@ NewRelicApi.api_key = key
 app = NewRelicApi::Account.find(:first).applications
 app_select = app.select { |i| i.name =~ /#{app_name}/ }
 
-## Create an array to hold our data points
-points = []
-
-## One hours worth of data, seed 60 empty points (rickshaw acts funny if you don't).
-(0..60).each do |a|
-  points << { x: a, y: 100 }
+history = YAML.load(Sinatra::Application.settings.history['newrelic-rpm'].to_s)
+unless history === false
+  points = []
+  points = history['data']['points'].last(60)
+else
+  ## One hours worth of data for, seed 60 empty points (rickshaw acts funny if you don't).
+  ## Create an array to hold our data points
+  points = []
+  (0..59).each do |a|
+    points << { 'x' => a, 'y' => 0.00 }
+  end
 end
 
 ## Grab the last x value
-last_x = points.last[:x]
+last_x = points.last['x']
 
 ## Every 1m for this
 SCHEDULER.every '1m', :first_in => 0 do |job|
@@ -35,7 +40,7 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
   last_x += 1
 
   ## Push the most recent point value
-  points << { x: last_x, y: current_rpm  }
+  points << { 'x' => last_x, 'y' => current_rpm  }
 
   send_event("newrelic-rpm", { rpm: current_rpm, points: points })
 
