@@ -9,10 +9,10 @@ $moreinfo-color:    rgba(255, 255, 255, 1.0);
 // ----------------------------------------------------------------------------
 // Widget-text styles
 // ----------------------------------------------------------------------------
-.widget.widget-newrelicerror{
+.widget.widget-newrelic {
   vertical-align: bottom;
 }
-.widget-newrelicerror {
+.widget-newrelic {
 
   background-color: $background-color;
   background-position: center center;
@@ -27,7 +27,7 @@ $moreinfo-color:    rgba(255, 255, 255, 1.0);
   }
 
 
-  .error-graph {
+  .newrelic-graph {
     position: absolute;
     top: 178px;
     left: 0;
