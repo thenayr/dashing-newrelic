@@ -27,6 +27,13 @@ gem 'newrelic_api'
 gem 'activeresource'
 ```
 
+The `newrelic_api` gem also requires `activeresource`, so if you're not using Rails, you will need this in your Gemfile too:
+
+```
+## Gemfile
+gem 'activeresource'
+```
+
 Then `bundle install`
 
 ## Using the New Relic widgets
