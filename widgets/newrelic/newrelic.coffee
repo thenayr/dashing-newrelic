@@ -19,8 +19,8 @@ class Dashing.Newrelic extends Dashing.Widget
 
   onData: (data) ->
 
-    @responseGreen = document.getElementById(this.id).getAttribute('data-green')
-    @responseYellow = document.getElementById(this.id).getAttribute('data-yellow')
+    @responseGreen = parseInt(document.getElementById(this.id).getAttribute('data-green'))
+    @responseYellow = parseInt(document.getElementById(this.id).getAttribute('data-yellow'))
 
     val = data.current
     if (
